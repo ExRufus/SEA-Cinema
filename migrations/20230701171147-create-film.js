@@ -17,6 +17,10 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
+      release_date: {
+        type: Sequelize.DATEONLY,
+        allowNull: false
+      },
       age_rating: {
         type: Sequelize.INTEGER,
         allowNull: false

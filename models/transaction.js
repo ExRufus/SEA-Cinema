@@ -12,7 +12,8 @@ module.exports = (sequelize, DataTypes) => {
   Transaction.init({
     userId: DataTypes.INTEGER,
     filmId: DataTypes.INTEGER,
-    transactionDate: DataTypes.DATE
+    transactionDate: DataTypes.DATE,
+    place_seat: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Transaction',

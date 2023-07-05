@@ -41,6 +41,10 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
+      },
+      place_seat: {
+        type: Sequelize.INTEGER,
+        allowNull: false
       }
     });
   },

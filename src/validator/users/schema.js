@@ -12,7 +12,7 @@ const UserPayloadSchema = Joi.object({
     .max(15)
     .required(),
   name: Joi.string()
-    .pattern(/^[a-zA-Z]+$/)
+    .pattern(/^[a-zA-Z\s]+$/)
     .required(),
   age: Joi.number()
     .integer()
